@@ -17,11 +17,11 @@ protocol speaker {
 
 class Connect: NSObject {
 
-  var connection: NWConnection?
-  var listen: NWListener?
-  var spoken: speaker?
-  var localEndPoint: String?
-  var remoteEndPoint: String?
+  private var connection: NWConnection?
+  private var listen: NWListener?
+  private var spoken: speaker?
+  private var localEndPoint: String?
+  private var remoteEndPoint: String?
   
   func listenUDP(port: NWEndpoint.Port) {
     do {
@@ -45,8 +45,6 @@ class Connect: NSObject {
         newConnection.stateUpdateHandler = {newState in
           switch newState {
           case .ready:
-            
-            print("newConnection", newConnection.endpoint, newConnection.currentPath?.localEndpoint)
             self.localEndPoint = (newConnection.currentPath?.localEndpoint!.debugDescription)!
             self.remoteEndPoint = (newConnection.currentPath?.remoteEndpoint!.debugDescription)!
             self.spoken?.paras(self.localEndPoint!, outX: self.remoteEndPoint!)
@@ -215,17 +213,3 @@ class Connect: NSObject {
   }
   
 }
-
-//
-//
-//extension String {
-//
-//    func removeCharacters(from forbiddenChars: CharacterSet) -> String {
-//        let passed = self.unicodeScalars.filter { !forbiddenChars.contains($0) }
-//        return String(String.UnicodeScalarView(passed))
-//    }
-//
-//    func removeCharacters(from: String) -> String {
-//        return removeCharacters(from: CharacterSet(charactersIn: from))
-//    }
-//}
