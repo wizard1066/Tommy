@@ -13,6 +13,7 @@
 		7BEAF7F223D5A12A00652ECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEAF7F023D5A12A00652ECC /* Main.storyboard */; };
 		7BEAF7F423D5A13000652ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BEAF7F323D5A13000652ECC /* Assets.xcassets */; };
 		7BEAF7F723D5A13000652ECC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BEAF7F523D5A13000652ECC /* LaunchScreen.storyboard */; };
+		7BEAF80123D5A28D00652ECC /* Connect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEAF80023D5A28D00652ECC /* Connect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7BEAF7F323D5A13000652ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BEAF7F623D5A13000652ECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7BEAF7F823D5A13000652ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BEAF80023D5A28D00652ECC /* Connect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		7BEAF7E923D5A12A00652ECC /* Tommy */ = {
 			isa = PBXGroup;
 			children = (
+				7BEAF80023D5A28D00652ECC /* Connect.swift */,
 				7BEAF7EA23D5A12A00652ECC /* AppDelegate.swift */,
 				7BEAF7EC23D5A12A00652ECC /* SceneDelegate.swift */,
 				7BEAF7EE23D5A12A00652ECC /* ViewController.swift */,
@@ -140,6 +143,7 @@
 			files = (
 				7BEAF7EF23D5A12A00652ECC /* ViewController.swift in Sources */,
 				7BEAF7EB23D5A12A00652ECC /* AppDelegate.swift in Sources */,
+				7BEAF80123D5A28D00652ECC /* Connect.swift in Sources */,
 				7BEAF7ED23D5A12A00652ECC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +291,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWGS87U262;
 				INFOPLIST_FILE = Tommy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +310,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWGS87U262;
 				INFOPLIST_FILE = Tommy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
